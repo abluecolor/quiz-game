@@ -44,10 +44,10 @@ def quiz_game():
     else: 
         print("Incorrect! Correct answer: document object model")
 
-    print("You got " + str(score) + " questions correct!")
+    print("You got " + str(score) + " questions correct! That's " + str((score/5) * 100) + "%.")
     if score < 5:
         more = input("Try again? ")
-        if more == "yes":
+        if more.lower() == "yes":
             quiz_game()
         else:
             quit()
