@@ -2,37 +2,43 @@ print("Welcome!")
 
 playing = input("Do you want to play? ")
 
-if playing != "yes":
+if playing.lower() != "yes":
     quit()
 
 print("Okay! Let's play :) ")
+score = 0
 
 answer = input("What does the 'elif' keyword stand for? ")
-if answer == "else if":
+if answer.lower() == "else if":
     print("Correct!")
+    score += 1
 else: 
     print("Incorrect! Correct answer: else if")
 
 answer = input("What is the popular snake-inspired programming language? ")
-if answer == "python":
+if answer.lower() == "python":
     print("Correct!")
+    score += 1
 else: 
     print("Incorrect! Correct answer: python")
 
 answer = input("HTML stands for? ")
-if answer == "hypertext markup language":
+if answer.lower() == "hypertext markup language":
     print("Correct!")
+    score += 1
 else: 
     print("Incorrect! Correct answer: hypertext markup language")
 
 answer = input("What do you call a function that calls itself? ")
-if answer == "recursive function":
+if answer.lower() == "recursive function":
     print("Correct!")
+    score += 1
 else: 
     print("Incorrect! Correct answer: recursive function")
 
 answer = input("What does the 'DOM' stand for in JavaScript? ")
-if answer == "document object model":
+if answer.lower() == "document object model":
     print("Correct!")
+    score += 1
 else: 
     print("Incorrect! Correct answer: document object model")
